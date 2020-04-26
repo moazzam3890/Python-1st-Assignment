@@ -9,7 +9,12 @@ elif Operation == "-" :
 elif Operation == "*" :
     print(float(num1) * float(num2))
 elif Operation == "/" :
-    print(float(num1) / float(num2))
+    if num1 == "0" :
+        print(1)
+    elif num2 == "0" :
+        print("Infinity")
+    else :
+        print(float(num1) / float(num2))
 else :
     print("Invalid Input. Please select the correct Input don't be hooshyaar")
 
